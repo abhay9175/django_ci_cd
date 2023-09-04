@@ -7,7 +7,7 @@ pipeline{
       steps  {
             sh '''
             chmod +x envsetup.sh
-            ./envsetup.sh
+            ./workspace/django-app/scripts/envsetup.sh
             '''}
         }
         stage('Setup Gunicorn Setup'){
